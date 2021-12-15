@@ -24,7 +24,7 @@ Ce dépôt contient :
 Structure des dossiers contenus dans ce dépôt
 Des précisions sur le contenu de chaque dossier / fichier sont indiquées au besoin (** Précisions)
 
-+---1-corpus
++---1-corpus<br/>
 |   |   tailles_corpus_appr_test.xlsx  
 |   |   ** Fichier tableur indiquant les ratios de données incels/neutres utilisées dans chacun des corpus d'apprentissage et de test
 |   |   
