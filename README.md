@@ -37,7 +37,7 @@ Des précisions sur le contenu de chaque dossier&nbsp;/&nbsp;fichier sont indiqu
 |   |   |   ** Fichier tableur contenant 60 000 données neutres, utilisées pour constituer les différents ratios de données neutres au sein des différents corpus d'apprentissage et de test 
 |   |   | 
 |   |   +---corpus_incel_ribeiro_filtre
-|   |   |   ** 60 fichiers au format tableur contenant approximativement 500 000 données incels issues du corpus de Ribeiro et al. (2019) ; filtrées selon le subreddits (doivent appartenir à un
+|   |   |   ** 60 fichiers au format tableur contenant approximativement 500 000 données incels issues du corpus de Ribeiro et al. (2020) ; filtrées selon le subreddits (doivent appartenir à un
 |   |   |      subreddit catégorisé "incel" et la date de publication (2015-2019)
 |   |   | 
 |   |   |       incels_1.xlsx
@@ -48,7 +48,7 @@ Des précisions sur le contenu de chaque dossier&nbsp;/&nbsp;fichier sont indiqu
 |   |   |       incels_58.xlsx
 |   |   |       incels_59.xlsx
 |   |   |       ribeiro_subreddits_categories.xlsx
-|   |   |       ** Liste des subreddits catégorisés comme étant significativement fréquentés par les membres des communautés incels selon les travaux de Ribeiro et al. (2019)
+|   |   |       ** Liste des subreddits catégorisés comme étant significativement fréquentés par les membres des communautés incels selon les travaux de Ribeiro et al. (2020)
 |   |   |       
 |   |   \---corpus_incel_ribeiro_filtre_samples
 |   |       ** Ce dossier contient des fichiers au format tableur contenant des échantillons de taille variable de données incels extraits aléatoirement des 58 premiers fichiers 
