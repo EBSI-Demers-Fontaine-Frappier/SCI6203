@@ -80,7 +80,7 @@ Des précisions sur le contenu de chaque dossier&nbsp;/&nbsp;fichier sont indiqu
 |   |        valeurs de KNN) et selon un nombre variable de traits discriminants retenus (allant de 100 à 3700)        
 |   | 
 |   |   **Les fichiers ont étés nommés de manière à indiquer le ratio de données incels et de données neutres qu'ils contiennent ainsi que la taille du corpus (en nombre de posts) ;     
-|   |   Par exemple, le fichier app_10_90_250k contient 10% de données incels, 90% de données neutres et compte 250 000 (250K) commentaires Reddit au total    
+|   |   Par exemple, le fichier app_10_90_50k.ppj contient 10% de données incels, 90% de données neutres et compte 50 000 (50K) commentaires Reddit au total    
 |   | 
 |   +---10_90_500k
 |   |       appr_10_90_500k.ppj
