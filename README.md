@@ -20,7 +20,7 @@ Ce dépôt contient :
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Structure des dossiers contenus dans ce dépôt
+## Structure des dossiers contenus dans ce dépôt
 Des précisions sur le contenu de chaque dossier&nbsp;/&nbsp;fichier sont indiquées au besoin (** Précisions)
 
 ```text
