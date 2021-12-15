@@ -175,7 +175,7 @@ Des précisions sur le contenu de chaque dossier&nbsp;/&nbsp;fichier sont indiqu
 |           knn-2_resultats_90_10_10k.xlsx  
 |         
 +---4-annexes
-|   |   ** Ce dossier contient l'ensemble des annexes mentionnées dans l'article : la liste des subreddits incels et neutres d'où proviennent les données d'apprentissage ; (y a-t-il autre chose qu'on pourrait/devrait mettre là? )
+|   |   ** Ce dossier contient les annexes mentionnées dans l'article, soit les listes des subreddits incels et neutres d'où proviennent les données d'apprentissage ;
 |   | 
 |       liste_subreddits_incels.xlsx
 |       liste_subreddits_neutres.xlsx
