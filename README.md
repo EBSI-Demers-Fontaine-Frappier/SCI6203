@@ -18,6 +18,12 @@ Ce dépôt contient :
 - L'ensemble des résultats au test mené sur différents ratios de données "incels"/"neutres" avec les deux classifieurs KNN retenus (où K = 1 et 2, respectivement)
 - Les différentes annexes mentionnées dans le corps du texte de l'article
 
+Référence du jeu de données de Ribeiro et al. (2019) dont nous nous sommes servies pour développer notre modèle : <br/>
+>Ribeiro, M. H., Blackburn, J., Bradlyn, B., de Cristofaro, E., Stringhini, G., Long, S., Greenberg, S. et Zannettou, S. (2020). Dataset for: The Evolution of the Manosphere >Across the Web (version 1.0) [Ensemble de données]. Zenodo. https://doi.org/10.5281/zenodo.4007913 
+
+
+
+
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ## Structure des dossiers contenus dans ce dépôt
