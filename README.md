@@ -11,10 +11,10 @@ Ce dépôt contient :
 - Les scripts utilisés pour lire, filtrer, nettoyer et échantillonner aléatoirement différentes proportions de données d'apprentissage
 - L'ensemble des modèles développés dans l'outil Wordstat (fichiers .ppj) à partir de différentes proportions de données issues de chacune des catégories
 - Le détail des paramètres testés en phase d'apprentissage : 
-  > Les ratios "incels"/"neutres" testés
-  > Les critères relatifs au filtrage  du corpus d'apprentissage (liste d'exclusion de termes ; fréquence minimale d'occurrence, nombre maximal de traits discriminants à retenir, etc.)
-  > Les différents nombre de traits discriminants testés 
-  > Les paramètres des algorithmes utilisés lors des expérimentations (statistiques utilisées pour la pondération des traits discriminants, valeurs de K testées pour l'algorithme des K plus proches voisins, etc.)
+  > - Les ratios "incels"/"neutres" testés
+  > - Les critères relatifs au filtrage  du corpus d'apprentissage (liste d'exclusion de termes ; fréquence minimale d'occurrence, nombre maximal de traits discriminants à retenir, etc.)
+  > - Les différents nombre de traits discriminants testés 
+  > - Les paramètres des algorithmes utilisés lors des expérimentations (statistiques utilisées pour la pondération des traits discriminants, valeurs de K testées pour l'algorithme des K plus proches voisins, etc.)
 
 - L'ensemble des résultats au test mené sur différents ratios de données "incels"/"neutres" avec les deux classifieurs KNN retenus (où K = 1 et 2, respectivement)
 - Les différentes annexes mentionnées dans le corps du texte de l'article
@@ -25,18 +25,18 @@ Structure des dossiers contenus dans ce dépôt
 Des précisions sur le contenu de chaque dossier / fichier sont indiquées au besoin (** Précisions)
 
 +---1-corpus<br/>
-|   |   tailles_corpus_appr_test.xlsx<br/>  
-|   |   ** Fichier tableur indiquant les ratios de données incels/neutres utilisées dans chacun des corpus d'apprentissage et de test<br/>
-|   |<br/>   
-|   +---corpus_apprentissage<br/>
-|   |   |   neutres_60k_nettoyes.xlsx<br/>
-|   |   |   ** Fichier tableur contenant 60 000 données neutres, utilisées pour constituer les différents ratios de données neutres au sein des différents corpus d'apprentissage et de test<br/> 
-|   |   |<br/> 
-|   |   +---corpus_incel_ribeiro_filtre<br/>
-|   |   |   ** 60 fichiers au format tableur contenant approximativement 500 000 données incels issues du corpus de Ribeiro et al. (2019) ; filtrées selon le subreddits (doivent appartenir à un<br/>
-|   |   |      subreddit catégorisé "incel" et la date de publication (2015-2019)<br/>
-|   |   |<br/> 
-|   |   |       incels_1.xlsx<br/>
+|&nbsp;&nbsp;&nbsp;&nbsp;|   tailles_corpus_appr_test.xlsx<br/>  
+|&nbsp;&nbsp;&nbsp;&nbsp;|   ** Fichier tableur indiquant les ratios de données incels/neutres utilisées dans chacun des corpus d'apprentissage et de test<br/>
+|&nbsp;&nbsp;&nbsp;&nbsp;|<br/>   
+|&nbsp;&nbsp;&nbsp;&nbsp;+---corpus_apprentissage<br/>
+|&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;|   neutres_60k_nettoyes.xlsx<br/>
+|&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;|   ** Fichier tableur contenant 60 000 données neutres, utilisées pour constituer les différents ratios de données neutres au sein des différents corpus d'apprentissage et de test<br/> 
+|&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;|<br/> 
+|&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;+---corpus_incel_ribeiro_filtre<br/>
+|&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;|   ** 60 fichiers au format tableur contenant approximativement 500 000 données incels issues du corpus de Ribeiro et al. (2019) ; filtrées selon le subreddits (doivent appartenir à un<br/>
+|&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;|      subreddit catégorisé "incel" et la date de publication (2015-2019)<br/>
+|&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;|<br/> 
+|&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;|       incels_1.xlsx<br/>
 |   |   |       incels_2.xlsx
 |   |   |       incels_3.xlsx
    ...               ...
