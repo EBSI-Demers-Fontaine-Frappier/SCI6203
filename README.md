@@ -22,6 +22,7 @@ Ce dépôt contient :
 
 ## Structure des dossiers contenus dans ce dépôt
 Des précisions sur le contenu de chaque dossier&nbsp;/&nbsp;fichier sont indiquées au besoin (** Précisions)
+(Utiliser les flèches gauche et droite du clavier pour faire défiler le texte horizontalement)
 
 ```text
 +---1-corpus
