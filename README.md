@@ -11,10 +11,10 @@ Ce dépôt contient :
 - Les scripts utilisés pour lire, filtrer, nettoyer et échantillonner aléatoirement différentes proportions de données d'apprentissage
 - L'ensemble des modèles développés dans l'outil Wordstat (fichiers .ppj) à partir de différentes proportions de données issues de chacune des catégories
 - Le détail des paramètres testés en phase d'apprentissage : 
-  > - Les ratios "incels"/"neutres" testés
-  > - Les critères relatifs au filtrage  du corpus d'apprentissage (liste d'exclusion de termes ; fréquence minimale d'occurrence, nombre maximal de traits discriminants à retenir, etc.)
-  > - Les différents nombre de traits discriminants testés 
-  > - Les paramètres des algorithmes utilisés lors des expérimentations (statistiques utilisées pour la pondération des traits discriminants, valeurs de K testées pour l'algorithme des K plus proches voisins, etc.)
+   - Les ratios "incels"/"neutres" testés
+   - Les critères relatifs au filtrage  du corpus d'apprentissage (liste d'exclusion de termes ; fréquence minimale d'occurrence, nombre maximal de traits discriminants à retenir, etc.)
+   - Les différents nombre de traits discriminants testés 
+   - Les paramètres des algorithmes utilisés lors des expérimentations (statistiques utilisées pour la pondération des traits discriminants, valeurs de K testées pour l'algorithme des K plus proches voisins, etc.)
 - L'ensemble des résultats au test mené sur différents ratios de données "incels"/"neutres" avec les deux classifieurs KNN retenus (où K = 1 et 2, respectivement)
 - Les différentes annexes mentionnées dans le corps du texte de l'article
 
