@@ -15,53 +15,53 @@ Ce dépôt contient :
   > - Les critères relatifs au filtrage  du corpus d'apprentissage (liste d'exclusion de termes ; fréquence minimale d'occurrence, nombre maximal de traits discriminants à retenir, etc.)
   > - Les différents nombre de traits discriminants testés 
   > - Les paramètres des algorithmes utilisés lors des expérimentations (statistiques utilisées pour la pondération des traits discriminants, valeurs de K testées pour l'algorithme des K plus proches voisins, etc.)
-
 - L'ensemble des résultats au test mené sur différents ratios de données "incels"/"neutres" avec les deux classifieurs KNN retenus (où K = 1 et 2, respectivement)
 - Les différentes annexes mentionnées dans le corps du texte de l'article
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Structure des dossiers contenus dans ce dépôt
-Des précisions sur le contenu de chaque dossier / fichier sont indiquées au besoin (** Précisions)
+Des précisions sur le contenu de chaque dossier&nbsp;/&nbsp;fichier sont indiquées au besoin (** Précisions)
 
-+---1-corpus<br/>
-|&nbsp;&nbsp;&nbsp;&nbsp;|   tailles_corpus_appr_test.xlsx<br/>  
-|&nbsp;&nbsp;&nbsp;&nbsp;|   ** Fichier tableur indiquant les ratios de données incels/neutres utilisées dans chacun des corpus d'apprentissage et de test<br/>
-|&nbsp;&nbsp;&nbsp;&nbsp;|<br/>   
-|&nbsp;&nbsp;&nbsp;&nbsp;+---corpus_apprentissage<br/>
-|&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;|   neutres_60k_nettoyes.xlsx<br/>
-|&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;|   ** Fichier tableur contenant 60 000 données neutres, utilisées pour constituer les différents ratios de données neutres au sein des différents corpus d'apprentissage et de test<br/> 
-|&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;|
-|&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;+---corpus_incel_ribeiro_filtre<br/>
-|&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;|   ** 60 fichiers au format tableur contenant approximativement 500 000 données incels issues du corpus de Ribeiro et al. (2019) ; filtrées selon le subreddits (doivent appartenir à un<br/>
-|&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;|      subreddit catégorisé "incel" et la date de publication (2015-2019)<br/>
-|&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;|
-|&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;|       incels_1.xlsx<br/>
-|&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;|       incels_2.xlsx
-|&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;|       incels_3.xlsx
+```text
++---1-corpus
+|   |   tailles_corpus_appr_test.xlsx  
+|   |   ** Fichier tableur indiquant les ratios de données incels/neutres utilisées dans chacun des corpus d'apprentissage et de test
+|   |   
+|   +---corpus_apprentissage
+|   |   |   neutres_60k_nettoyes.xlsx
+|   |   |   ** Fichier tableur contenant 60 000 données neutres, utilisées pour constituer les différents ratios de données neutres au sein des différents corpus d'apprentissage et de test 
+|   |   | 
+|   |   +---corpus_incel_ribeiro_filtre
+|   |   |   ** 60 fichiers au format tableur contenant approximativement 500 000 données incels issues du corpus de Ribeiro et al. (2019) ; filtrées selon le subreddits (doivent appartenir à un
+|   |   |      subreddit catégorisé "incel" et la date de publication (2015-2019)
+|   |   | 
+|   |   |       incels_1.xlsx
+|   |   |       incels_2.xlsx
+|   |   |       incels_3.xlsx
    ...               ...
-|&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;|       incels_57.xlsx
-|&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;|       incels_58.xlsx
-|&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;|       incels_59.xlsx
-|&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;|       ribeiro_subreddits_categories.xlsx
-|&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;|       ** Liste des subreddits catégorisés comme étant significativement fréquentés par les membres des communautés incels selon les travaux de Ribeiro et al. (2019)
-|&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;|       
-|&nbsp;&nbsp;&nbsp;&nbsp;|   \---corpus_incel_ribeiro_filtre_samples
-|&nbsp;&nbsp;&nbsp;&nbsp;|       ** Ce dossier contient des fichiers au format tableur contenant des échantillons de taille variable de données incels extraits aléatoirement des 58 premiers fichiers 
-|&nbsp;&nbsp;&nbsp;&nbsp;|	       du dossier --corpus_incels_ribeiro_filtre afin de constituer les différents ratios de données incels/neutre de nos corpus d'apprentissage (le 59e fichier sert à mettre
-|&nbsp;&nbsp;&nbsp;&nbsp;| 	       de côté un ensemble de données incels pour la phase de test)
-|&nbsp;&nbsp;&nbsp;&nbsp;|   
-|&nbsp;&nbsp;&nbsp;&nbsp;|           corpus_incels_10k.xlsx
-|&nbsp;&nbsp;&nbsp;&nbsp;|           corpus_incels_20k.xlsx
-|&nbsp;&nbsp;&nbsp;&nbsp;|           corpus_incels_30k.xlsx
-|&nbsp;&nbsp;&nbsp;&nbsp;|           corpus_incels_40k.xlsx
-|&nbsp;&nbsp;&nbsp;&nbsp;|           corpus_incels_45k.xlsx
-|&nbsp;&nbsp;&nbsp;&nbsp;|           corpus_incels_50k.xlsx
-|&nbsp;&nbsp;&nbsp;&nbsp;|           
-|&nbsp;&nbsp;&nbsp;&nbsp;\---corpus_test
-|&nbsp;&nbsp;&nbsp;&nbsp;|   ** Ce dossier contient des fichiers au format tableur contenant les données utilisées pour la constitution des différents ratios de données de nos corpus test. 
-|&nbsp;&nbsp;&nbsp;&nbsp;|      Les données incels proviennent du 59e fichier du dossier --corpus_incel_ribeiro_filtre qui a été mis de côté pour la phase de test;
-|&nbsp;&nbsp;&nbsp;&nbsp;|      Les 15 000 données incels ont été exclues du fichier neutres_60k_nettoyes.xlsx en vue de la phase de test
+|   |   |       incels_57.xlsx
+|   |   |       incels_58.xlsx
+|   |   |       incels_59.xlsx
+|   |   |       ribeiro_subreddits_categories.xlsx
+|   |   |       ** Liste des subreddits catégorisés comme étant significativement fréquentés par les membres des communautés incels selon les travaux de Ribeiro et al. (2019)
+|   |   |       
+|   |   \---corpus_incel_ribeiro_filtre_samples
+|   |       ** Ce dossier contient des fichiers au format tableur contenant des échantillons de taille variable de données incels extraits aléatoirement des 58 premiers fichiers 
+|   |	       du dossier --corpus_incels_ribeiro_filtre afin de constituer les différents ratios de données incels/neutre de nos corpus d'apprentissage (le 59e fichier sert à mettre
+|   | 	       de côté un ensemble de données incels pour la phase de test)
+|   |   
+|   |           corpus_incels_10k.xlsx
+|   |           corpus_incels_20k.xlsx
+|   |           corpus_incels_30k.xlsx
+|   |           corpus_incels_40k.xlsx
+|   |           corpus_incels_45k.xlsx
+|   |           corpus_incels_50k.xlsx
+|   |           
+|   \---corpus_test
+|   |   ** Ce dossier contient des fichiers au format tableur contenant les données utilisées pour la constitution des différents ratios de données de nos corpus test. 
+|   |      Les données incels proviennent du 59e fichier du dossier --corpus_incel_ribeiro_filtre qui a été mis de côté pour la phase de test;
+|   |      Les 15 000 données incels ont été exclues du fichier neutres_60k_nettoyes.xlsx en vue de la phase de test
 |
 |           test_incels_10k.xlsx
 |           test_neutres_15k_nettoyes.xlsx
@@ -79,7 +79,7 @@ Des précisions sur le contenu de chaque dossier / fichier sont indiquées au be
 |   |      > Le fichier table.xlsx contient les résultats de l'expérimentation menée (exactitude, rappel, précision, mesure-F) pour chaque algorithme testé (Naive Bayes, différentes
 |   |        valeurs de KNN) et selon un nombre variable de traits discriminants retenus (allant de 100 à 3700)        
 |   | 
-|   |   ** Les fichiers ont étés nommés de manière à indiquer le ratio de données incels et de données neutres qu'ils contiennent ainsi que la taille du corpus (en nombre de posts)      
+|   |   **Les fichiers ont étés nommés de manière à indiquer le ratio de données incels et de données neutres qu'ils contiennent ainsi que la taille du corpus (en nombre de posts) ;     
 |   |   Par exemple, le fichier app_10_90_250k contient 10% de données incels, 90% de données neutres et compte 250 000 (250K) commentaires Reddit au total    
 |   | 
 |   +---10_90_500k
@@ -192,3 +192,5 @@ Des précisions sur le contenu de chaque dossier / fichier sont indiquées au be
         2_filtrer_incels_2015-2019.bas
         3_sampler_incels.bas
         4-bzt_n-lines_to-csv_neutres.py
+```
+
