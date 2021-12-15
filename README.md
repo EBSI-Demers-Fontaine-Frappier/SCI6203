@@ -7,10 +7,10 @@ Dépôt de nos fichiers pour le projet final du cours SCI6203 - Intelligence art
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Ce dépôt contient : 
--L'entièreté du corpus d'apprentissage et de test, de sa forme brute prétraitée (lue et convertie en sous-fichiers au format tableur) jusqu'à l'échantillon filtré que nous avons retenu pour développer notre modèle. 
--Les scripts utilisés pour lire, filtrer, nettoyer et échantillonner aléatoirement différentes proportions de données d'apprentissage
--L'ensemble des modèles développés dans l'outil Wordstat (fichiers .ppj) à partir de différentes proportions de données issues de chacune des catégories
--Le détail des paramètres testés en phase d'apprentissage : 
+- L'entièreté du corpus d'apprentissage et de test, de sa forme brute prétraitée (lue et convertie en sous-fichiers au format tableur) jusqu'à l'échantillon filtré que nous avons retenu pour développer notre modèle. 
+- Les scripts utilisés pour lire, filtrer, nettoyer et échantillonner aléatoirement différentes proportions de données d'apprentissage
+- L'ensemble des modèles développés dans l'outil Wordstat (fichiers .ppj) à partir de différentes proportions de données issues de chacune des catégories
+- Le détail des paramètres testés en phase d'apprentissage : 
   > Les ratios "incels"/"neutres" testés
   > Les critères relatifs au filtrage  du corpus d'apprentissage (liste d'exclusion de termes ; fréquence minimale d'occurrence, nombre maximal de traits discriminants à retenir, etc.)
   > Les différents nombre de traits discriminants testés 
