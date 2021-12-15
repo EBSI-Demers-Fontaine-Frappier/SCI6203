@@ -1,7 +1,7 @@
 # SCI6203
 Dépôt de nos fichiers pour le projet final du cours SCI6203 - Intelligence artificielle et données textuelles (A2021)
 
--- Application d'algorithmes d'intelligence artificielle en fouille de textes pour la détection des propos incels --
+-- Application d'algorithmes d'intelligence artificielle en fouille de textes pour la détection des propos incels<br/> 
 -- Camille Demers, Isabelle Fontaine et Audrée Frappier
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
