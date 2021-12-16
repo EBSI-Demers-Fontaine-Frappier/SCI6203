@@ -35,6 +35,8 @@ Des précisions sur le contenu de chaque dossier&nbsp;/&nbsp;fichier sont indiqu
 |   +---corpus_apprentissage
 |   |   |   neutres_60k_nettoyes.xlsx
 |   |   |   ** Fichier tableur contenant 60 000 données neutres, utilisées pour constituer les différents ratios de données neutres au sein des différents corpus d'apprentissage et de test 
+|   |   |   ribeiro_subreddits_categories.xlsx
+|   |   |   ** Liste des subreddits catégorisés comme étant significativement fréquentés par les membres des communautés incels selon les travaux de Ribeiro et al. (2020)
 |   |   | 
 |   |   +---corpus_incel_ribeiro_filtre
 |   |   |   ** 60 fichiers au format tableur contenant approximativement 500 000 données incels issues du corpus de Ribeiro et al. (2020) ; filtrées selon le subreddits (doivent appartenir à un
@@ -47,8 +49,6 @@ Des précisions sur le contenu de chaque dossier&nbsp;/&nbsp;fichier sont indiqu
 |   |   |       incels_57.xlsx
 |   |   |       incels_58.xlsx
 |   |   |       incels_59.xlsx
-|   |   |       ribeiro_subreddits_categories.xlsx
-|   |   |       ** Liste des subreddits catégorisés comme étant significativement fréquentés par les membres des communautés incels selon les travaux de Ribeiro et al. (2020)
 |   |   |       
 |   |   \---corpus_incel_ribeiro_filtre_samples
 |   |       ** Ce dossier contient des fichiers au format tableur contenant des échantillons de taille variable de données incels extraits aléatoirement des 58 premiers fichiers 
@@ -76,17 +76,20 @@ Des précisions sur le contenu de chaque dossier&nbsp;/&nbsp;fichier sont indiqu
 |   | 
 |   |   parametres_experimentations.xlsx
 |   |   ** Ce classeur documente les paramètres utilisés dans Wordstat pour mener les expérimentations lors de la phase d'apprentissage
-|   |   
+|   |
+|   |   resultats_apprentissage_graphs.xlsx
+|   |   ** Ce classeur contient les graphiques synthétisant les résultats obtenus en phase d'apprentissage pour l'ensemble des différents ratios de données testés avec différents nombres de traits discriminants et différents algorithmes ; il synthétise les résultats contenus dans les fichiers table.xlsx des sous-dossiers suivant
+|   |
 |   |   ** Chacun des sous-dossiers suivant contient les modèles d'apprentissage développés dans Wordstat pour les différents ratio de données incels/neutres testés : 
 |   |      > Le fichier .xlsx contient les données brutes (post, catégorie) du corpus d'apprentissage généré pour le ratio correspondant ; 
 |   |      > Le fichier .ppj correspond au projet créé par Wordstat une fois les données importées
-|   |      > Le fichier table.xlsx contient les résultats de l'expérimentation menée (exactitude, rappel, précision, mesure-F) pour chaque algorithme testé (Naive Bayes, différentes
-|   |        valeurs de KNN) et selon un nombre variable de traits discriminants retenus (allant de 100 à 3700)        
+|   |      > Le fichier table.xlsx contient les résultats de l'expérimentation menée (exactitude, rappel, précision, mesure-F) pour chaque algorithme testé (Naive Bayes, différentes valeurs de KNN) et selon un nombre variable de traits discriminants retenus (allant de 100 à 3700)              
 |   | 
-|   |   **Les fichiers ont étés nommés de manière à indiquer le ratio de données incels et de données neutres qu'ils contiennent ainsi que la taille du corpus (en nombre de posts) ;     
+|   |   ** Les fichiers ont étés nommés de manière à indiquer le ratio de données incels et de données neutres qu'ils contiennent ainsi que la taille du corpus (en nombre de posts) ;     
 |   |   Par exemple, le fichier app_10_90_50k.ppj contient 10% de données incels, 90% de données neutres et compte 50 000 (50K) commentaires Reddit au total    
 |   | 
 |   +---10_90_500k
+|   |   ** Ce sous-dossier a dû être exclu parce qu'il était trop volumineux pour être hébergé sur Github ; il est possible de nous contacter pour en avoir une copie au besoin.
 |   |       appr_10_90_500k.ppj
 |   |       appr_10_90_500k.xlsx
 |   |       
@@ -122,6 +125,12 @@ Des précisions sur le contenu de chaque dossier&nbsp;/&nbsp;fichier sont indiqu
 |           appr_90_10_50k_table.xlsx         
 |           
 +---3-test
+|   |   resultats_test_50k.xlsx
+|   |   ** Ce classeur contient l'ensemble des résultats (exactitude, rappel, précision, mesure-F) des test menés sur les deux systèmes retenus, soit les classifieurs KNN, où K = 1 et K = 2 respectivement, tenant compte de 3200 traits discriminants, pour différentes proportions de données incels testées.
+|   |
+|   |   resultats_test_50k-500k.xlsx
+|   |   ** Ce classeur contient les résultats comparant les performances obtenues par le système retenu (KNN = 1, 3200 trait discrimimnants, 10% de données incels) entraîné avec 50k données d'apprentissage vs 500k données d'apprentissage.
+|   |
 |   +---donnees_test
 |   |   ** Chacun des sous-dossiers suivant contient les corpus de données mises de côtés pour la phase de test, pour les différents ratio de données incels/neutres testés 
 |   |      > Le fichier .xlsx contient les données brutes (post, catégorie) du corpus test généré pour le ratio correspondant ; 
