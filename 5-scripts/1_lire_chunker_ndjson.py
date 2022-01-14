@@ -1,8 +1,11 @@
 # Morceler le fichier reddit.json en x fichiers .csv d'une longueur de n lignes chacun
+# Page consultée : https://coderwall.com/p/5vi8ca/use-python-to-read-file-by-n-lines-each-time
+# Le script de cette page a été repris et adapté à nos besoins
 
 from itertools import islice
 import json
 import csv 
+
 
 def next_n_lines(file_opened, N):
     return [x.strip() for x in islice(file_opened, N)]
