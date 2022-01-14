@@ -1,5 +1,6 @@
-# Lire les N premières lignes du fichier bz2, extraire seulement le texte du post + catégorie neutre
-# et en faire un fichier csv
+# Lire les N premières lignes du fichier bz2, extraire seulement le texte du post + catégorie neutre et en faire un fichier csv
+# Page consultée : https://www.pythontutorial.net/python-basics/python-write-csv-file/
+# Le script de cette page a été repris et adapté à nos besoins
 
 from itertools import islice
 import json
